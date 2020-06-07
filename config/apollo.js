@@ -1,11 +1,10 @@
 import { ApolloClient, createHttpLink, InMemoryCache } from '@apollo/client'
 import fetch from 'node-fetch'
 import { setContext } from 'apollo-link-context'
-require('dotenv').config({path: 'var.env' });
 
 
 const httpLink = createHttpLink({
-    uri: process.env.HOST,
+    uri: 'http://cdp-back.herokuapp.com/',
     fetch
 });
 
