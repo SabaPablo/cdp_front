@@ -62,6 +62,11 @@ const Login = () => {
         }
     })
 
+    const newUser = () =>{
+        router.push('/new_user')
+
+    }
+
     const showMsj = () => {
         return(
             <div className="bg-white py-2 px-3 w-full my-3 max-w-sm text-center mx-auto">
@@ -132,6 +137,9 @@ const Login = () => {
                                 </input>
                             </div>
                         </form>
+                        <div>
+                            <a className="text-blue-500 hover:text-blue-700" onClick={newUser}>Nuevo usuario</a>
+                        </div>
                     </div>
                 </div>
             </Layout>
