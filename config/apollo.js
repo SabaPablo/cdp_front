@@ -4,7 +4,7 @@ import { setContext } from 'apollo-link-context'
 
 
 const httpLink = createHttpLink({
-    uri: 'http://cdp-back.herokuapp.com/',
+    uri: 'https://cdp-back.herokuapp.com/',
     fetch
 });
 
